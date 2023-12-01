@@ -43,6 +43,13 @@ const Exercises: Exercise[] = [
         Description: "Do I even have to explain?",
         WeightType: WeightType.BodyWeight,
         IsDurationExercise: false
+    },
+    {
+        Id: 7,
+        ExerciseName: "Jump Squats",
+        Description: "Get low and jump",
+        WeightType: WeightType.BodyWeight,
+        IsDurationExercise: false
     }
 ];
 
