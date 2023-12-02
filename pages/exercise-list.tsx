@@ -13,9 +13,8 @@ export default function ExerciseList() {
 
     if (Exercises.length > 0 && !collapsed)
     {
-        console.log(Exercises.map((ex) => ExerciseCard(ex)))
         return (
-            <div className={classNames({"w-80": !collapsed, "w-10": collapsed,})}>
+            <div className="w-80 bg-slate-100 min-h-screen">
                 <button onClick={() => setSidebarCollapsed((prev) => !prev)}>
                     <div className="flex flex-direction-row p-2">
                         <ChevronDoubleDownIcon className="w-5 h-5" /> &nbsp; Hide Exercises 
@@ -32,12 +31,15 @@ export default function ExerciseList() {
     else
     {
         return (
-            <button onClick={() => setSidebarCollapsed((prev) => !prev)}>
-                <div className="flex flex-direction-row p-2">
-                    <ChevronDoubleRightIcon className="w-5 h-5" /> &nbsp; Show Exercises 
-                </div>
-                    
+            <div className="w-10 bg-slate-100 min-h-screen">
+                <button onClick={() => setSidebarCollapsed((prev) => !prev)}>
+                    <div className="p-2">
+                        <ChevronDoubleRightIcon className="w-5 h-5" />
+                    </div>
+
                 </button>
+            </div>
+
         )
     }
         

@@ -21,4 +21,9 @@ body {
   background: rgb(229 231 235);
 }
 
+exercise-list-expanded {
+  width: 80;
+  background: #000;
+}
+
 
