@@ -1,4 +1,4 @@
-import { WeightType } from "../public/enums"
+import { WeightType } from "./enums"
 
 export type Exercise = {
     Id: number;

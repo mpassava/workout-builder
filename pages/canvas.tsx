@@ -1,6 +1,6 @@
-import { Exercise } from "../public/types"
+import { Exercise } from "../lib/types"
 import Exercises from "./api/Exercises"
-import ExerciseCard from "../pages/exercise-card"
+import ExerciseCard from "../components/exercise-card"
 import { ChevronDoubleRightIcon, ChevronDoubleDownIcon } from "@heroicons/react/24/outline"
 import { useState } from "react";
 import classNames from "classnames";
