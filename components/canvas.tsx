@@ -1,10 +1,10 @@
 import { Exercise } from "../lib/types"
-import Exercises from "./api/Exercises"
-import ExerciseCard from "../components/exercise-card"
+import Exercises from "../pages/api/Exercises"
+import ExerciseCard from "./exercise-card"
 import { ChevronDoubleRightIcon, ChevronDoubleDownIcon } from "@heroicons/react/24/outline"
 import { useState } from "react";
 import classNames from "classnames";
-import ExerciseList from './exercise-list'
+import ExerciseList from '../pages/exercise-list'
 
 
 export default function WorkoutCanvas() {
