@@ -1,5 +1,5 @@
-import { Exercise } from "../../public/types";
-import { WeightType } from "../../public/enums";
+import { Exercise } from "../../lib/types";
+import { WeightType } from "../../lib/enums";
 
 const Exercises: Exercise[] = [
     {
