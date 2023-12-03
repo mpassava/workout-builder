@@ -15,7 +15,7 @@ export default function WorkoutCanvas() {
                 <ExerciseList />
             </div>
             <div className="flex-1 text-center rounded-md border border-slate-300 ">
-                This will be the workout canvas
+                This will be where the workout builder is rendered
             </div>
 
             
