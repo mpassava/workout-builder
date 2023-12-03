@@ -7,17 +7,21 @@ import classNames from "classnames";
 import ExerciseList from '../pages/exercise-list'
 
 
-export default function WorkoutCanvas() {
-return (
-    <div className="min-w-screen min-h-screen bg-gray-50 group rounded-lg border border-slate-300">
-        <div className="flex columns-2 break-after-column">
-            <ExerciseList />
-            what
+export default function WorkoutCanvas(IsListCollapsed: boolean = false) {
+    const [sharedState, setSharedState] = useState(false);
+    console.log(useState)
+    return (
+        <div className="flex flex-auto min-w-screen min-h-screen bg-gray-50 group rounded-md border border-slate-300">
+            <div className={IsListCollapsed ? "basis-1/4" :"basis-1/12"}>
+                <ExerciseList />
+            </div>
+            <div className="flex flex-auto rounded-md border border-slate-300 ">
+                What now
+            </div>
+
+            
         </div>
 
-        
-    </div>
-
-)
+    )
     
 }

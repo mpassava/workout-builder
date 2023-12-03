@@ -13,13 +13,15 @@ export default function ExerciseList() {
     if (Exercises.length > 0 && !collapsed)
     {
         return (
-            <div className="w-80 bg-slate-100 min-h-screen">
-                <button onClick={() => setSidebarCollapsed((prev) => !prev)}>
-                    <div className="flex flex-direction-row p-2">
-                        <ChevronDoubleDownIcon className="w-5 h-5" /> &nbsp; Hide Exercises 
-                    </div>
-                    
-                </button>
+            <div className="bg-slate-100 min-h-screen">
+                <div className="flex justify-start">
+                    <button onClick={() => setSidebarCollapsed((prev) => !prev)}>
+                        <div className="flex p-2">
+                            <ChevronDoubleDownIcon className="w-5 h-5" />
+                            &nbsp; Exercise List 
+                        </div>
+                    </button>
+                </div>
                 <div>
                     {Exercises.map((ex) => ExerciseCard(ex))}
                 </div>
