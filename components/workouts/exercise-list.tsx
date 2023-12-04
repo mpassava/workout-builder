@@ -1,4 +1,4 @@
-import Exercises from "../../pages/api/Exercises"
+import Exercises from "../../lib/Exercises"
 import ExerciseCard from "./exercise-card"
 import { ChevronDoubleRightIcon, ChevronDoubleDownIcon } from "@heroicons/react/24/outline"
 import { useState } from "react";
