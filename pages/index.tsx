@@ -1,8 +1,5 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import ExerciseList from './exercise-list/index'
-import WorkoutCanvas from '../components/canvas'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -11,10 +8,9 @@ export default function Home() {
       <Head>
         <title>Workout Builder v1.0</title>
       </Head>
-      <div>
-        <WorkoutCanvas />
+      <div className='font-extrabold text-5xl text-center'>
+        <Link href='/workouts'>Workouts</Link>
       </div>
-      
     </div>
   )
 }

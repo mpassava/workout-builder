@@ -1,4 +1,4 @@
-import { Exercise } from "../lib/types"
+import { Exercise } from "../../lib/types"
 
 export default function ExerciseCard({ Id, ExerciseName }: Exercise) {
     return (

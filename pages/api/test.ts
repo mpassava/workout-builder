@@ -1,7 +1,10 @@
-import { Exercise } from "../../lib/types";
-import { WeightType } from "../../lib/enums";
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { NextApiRequest, NextApiResponse } from 'next'
+import { Exercise } from '@/lib/types';
+import { WeightType } from '@/lib/enums';
 
-const Exercises: Exercise[] = [
+export default function handler( req: NextApiRequest, res: NextApiResponse<Exercise[]> ) {
+  const Exercises: Exercise[] = [
     {
         Id: 1,
         ExerciseName: "Barbell Squats",
@@ -52,5 +55,5 @@ const Exercises: Exercise[] = [
         IsDurationExercise: false
     }
 ];
-
-export default Exercises
+  res.status(200).json(Exercises)
+}
