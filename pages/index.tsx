@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import ExerciseList from './exercise-list/index'
-import WorkoutCanvas from '../components/canvas'
+import ExerciseList from '../components/workouts/exercise-list'
+import WorkoutCanvas from '../components/workouts/canvas'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -11,10 +12,7 @@ export default function Home() {
       <Head>
         <title>Workout Builder v1.0</title>
       </Head>
-      <div>
-        <WorkoutCanvas />
-      </div>
-      
+      <Link href='/workouts'>Workouts</Link>
     </div>
   )
 }

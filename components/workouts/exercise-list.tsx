@@ -1,13 +1,12 @@
-import Exercises from "../api/Exercises"
-import ExerciseCard from "../../components/exercise-card"
+import Exercises from "../../pages/api/Exercises"
+import ExerciseCard from "./exercise-card"
 import { ChevronDoubleRightIcon, ChevronDoubleDownIcon } from "@heroicons/react/24/outline"
 import { useState } from "react";
-import classNames from "classnames";
 
 
 export default function ExerciseList() {
     //const exercises = Array.from(Exercises)
-
+    
     const [collapsed, setSidebarCollapsed] = useState(false);
 
     if (Exercises.length > 0 && !collapsed)
@@ -44,4 +43,15 @@ export default function ExerciseList() {
         )
     }
         
+}
+
+export async function getStaticProps() {
+    const response = await fetch('http://localhost:3000/api/test');
+    const data = await response.json();
+    
+    return {
+        props: {
+            exercises: data,
+        },
+    }
 }
