@@ -1,4 +1,3 @@
-import Exercises from "../../lib/Exercises"
 import ExerciseCard from "./exercise-card"
 import { ChevronDoubleRightIcon, ChevronDoubleDownIcon } from "@heroicons/react/24/outline"
 import { useState } from "react";
@@ -6,11 +5,10 @@ import { Exercise } from "@/lib/types";
 
 
 export default function ExerciseList({ exercises }: { exercises: Exercise[] }) {
-  //const exercises = Array.from(Exercises)
   
   const [collapsed, setSidebarCollapsed] = useState(false);
   
-  if (Exercises.length > 0 && !collapsed)
+  if (exercises.length > 0 && !collapsed)
   {
     return (
       <div className="bg-slate-100 min-h-screen">
