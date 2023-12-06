@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import daisyui from 'daisyui';
 
 const config: Config = {
   content: [
@@ -10,6 +11,11 @@ const config: Config = {
     extend: {
     },
   },
-  plugins: [require('daisyui')],
+  daisyui: {
+    base: false,
+    darkTheme: "light"
+  },
+
+  plugins: [daisyui], 
 }
 export default config
