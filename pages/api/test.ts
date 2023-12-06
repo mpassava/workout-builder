@@ -53,6 +53,13 @@ export default function handler( req: NextApiRequest, res: NextApiResponse<Exerc
         Description: "Get low and jump",
         WeightType: WeightType.BodyWeight,
         IsDurationExercise: false
+    },
+    {
+        Id: 8,
+        ExerciseName: "Sumo Squats",
+        Description: "Get low like a sumo",
+        WeightType: WeightType.Barbell,
+        IsDurationExercise: false
     }
 ];
   res.status(200).json(Exercises)

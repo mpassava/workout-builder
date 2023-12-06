@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Layout from '@/components/layout'
 
 
 export default function Home() {
@@ -8,9 +9,13 @@ export default function Home() {
       <Head>
         <title>Workout Builder v1.0</title>
       </Head>
-      <div className='font-extrabold text-5xl text-center'>
-        <Link href='/workouts'>Workouts</Link>
-      </div>
+      <Layout>
+        <div className='font-extrabold text-5xl text-center'>
+          Workouts
+        </div>
+      </Layout>
+
     </div>
+
   )
 }
