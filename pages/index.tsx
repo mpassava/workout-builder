@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
-
 
 export default function Home() {
   return (
@@ -8,9 +6,6 @@ export default function Home() {
       <Head>
         <title>Workout Builder v1.0</title>
       </Head>
-      <div className='font-extrabold text-5xl text-center'>
-        <Link href='/workouts'>Workouts</Link>
-      </div>
     </div>
   )
 }
