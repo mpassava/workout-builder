@@ -13,3 +13,7 @@ const config: Config = {
   plugins: [],
 }
 export default config
+
+module.exports = {
+  plugins: [require('daisyui')],
+}
